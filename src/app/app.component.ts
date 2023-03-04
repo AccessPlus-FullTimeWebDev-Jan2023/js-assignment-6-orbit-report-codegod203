@@ -21,6 +21,7 @@ export class AppComponent {
 			response.json().then(function (data) {
 
 				let fetchedSatellites = data.satellites;
+				
 				// loop over satellites
 				for(let i=0; i < fetchedSatellites.length; i++) {
 					// create a Satellite object 
