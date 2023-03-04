@@ -12,21 +12,13 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-<<<<<<< HEAD
-    <tr class="data-row" *ngFor = "let satellite of satellites">
-        <td>{{satellite.name}}</td>
-        <td [class.warning]="satellite.isSpaceDebris()">{{satellite.type}}</td>
-        <td>{{satellite.operational}}</td>
-        <td>{{satellite.orbitType}}</td>
-        <td>{{satellite.launchDate}}</td>
 
-=======
-    <tr class="data-row" *ngfor = let satellite of satellites>
+    <tr class="data-row" *ngFor ="let satellite of satellites">
         <td>{{satellite.name}}</td>
-        <td[class.warning] = "satellite.shouldShowWarning()">{{satellite.type}}</td>
+        <td [class.warning] = "satellite.isSpaceDebris()" >{{satellite.type}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
->>>>>>> 5b8f1d07bbeba1e15feee28cbbf2394e1583ee78
     </tr>
 </table>
+
